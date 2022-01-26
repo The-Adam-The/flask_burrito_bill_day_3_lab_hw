@@ -1,6 +1,10 @@
 <html>
     <head>
         <title>{{customer_orders.customer_name}}'s order</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
         <h1>Burrito Bill's Customer Orders</h1>
@@ -12,7 +16,7 @@
             <li><p>Number of burritos ordered: <b>{{customer_orders.quantity}}</b></p></li>
             <li><p>Extra fillings: <b>{{customer_orders.food_topping}}</b></p></li>
             <br>
-       
+            <a href="/orders">back</a>
         </ul>    
     </body>
 </html>
