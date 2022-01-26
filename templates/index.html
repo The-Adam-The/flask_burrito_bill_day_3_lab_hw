@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Customer Orders</title>
+    </head>
+    <body>
+        <h1>Burrito Bills Customer Orders</h1>
+        <br>
+        <ul>
+        {% for customer in customer_orders %}
+            <li><p>Name: <b>{{customer.customer_name}}</b></p></li>
+            <li><p>Date: <b>{{customer.order_date}}</b></p></li>
+            <li><p>Number of burritos ordered: <b>{{customer.quantity}}</b></p></li>
+            <li><p>Extra fillings: <b>{{customer.food_topping}}</b></p></li>
+            <br>
+        {% endfor %}
+        </ul>    
+    </body>
+</html>
